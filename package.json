@@ -6,12 +6,16 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.1",
     "@testing-library/user-event": "^12.2.2",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "tailwindcss": "^2.0.1-compat",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "watch:css": "postcss --watch tailwindcss/style.css -o src/assets/css/style.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-cli": "^7.1.1"
   }
 }
